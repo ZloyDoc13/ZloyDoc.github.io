@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap");
+
+:root {
+  --orange: #f9690e;
+  --black: #020202;
+  --white: #fff;
+  --border: 0.2rem solid #f9690e;
+  --box-shadow: 0.5rem 1rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  background: url(../img/страница.jpg) no-repeat center/cover;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+nav ul li a {
+  color: var(--white);
+  margin: 5rem;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: var(--orange);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+
+.content h3 {
+  font-size: clamp(0.7rem, 1vw + 2rem, 3.5rem);
+  margin-bottom: 3rem;
+}
+
+.content h3 a {
+  color: var(--white);
+}
+
+.content .btn {
+  padding: 1rem 2.5rem;
+  border: var(--border);
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  transition: 0.7s;
+}
+
+.content .btn:hover {
+  background: var(--orange);
+}
+
+.itsMe {
+  background: var(--black);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.itsMe .img-itsMe img {
+  width: 80rem;
+  border: var(--border);
+  border-radius: 2rem;
+  object-fit: cover;
+  flex-basis: 50%;
+}
+
+.itsMe .content-itsMe {
+  flex-basis: 50%;
+  color: var(--white);
+  margin-left: 5rem;
+}
+
+.itsMe .content-itsMe h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.itsMe .content-itsMe p {
+  font-size: clamp(1.2rem, 1vw + 1.3rem, 1.5rem);
+  margin-bottom: 3rem;
+}
+
+.itsMe .content-itsMe .btn {
+  padding: 1rem 2.5rem;
+  border: var(--border);
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  transition: 0.7s;
+}
+
+.itsMe .content-itsMe .btn:hover {
+  background: var(--orange);
+}
+
+.myinterests {
+  background: var(--white);
+  padding: 5rem;
+}
+
+.myinterests .heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.myinterests .heading span {
+  color: var(--orange);
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-item {
+  margin: 2rem;
+  width: 30rem;
+  background: var(--white);
+  border-radius: 2rem;
+  border: var(--border);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.box-item:hover {
+  transform: translateY(-1.5rem);
+}
+
+.box-item img {
+  width: clamp(10vw + 20%, 1vw + 25%, 40%);
+  border-radius: 2rem;
+}
+
+.box-item .top {
+  font-size: 2rem;
+}
+
+.contacts {
+  background: var(--black);
+  padding: 5rem;
+}
+
+.contacts .heading {
+  text-align: center;
+  color: var(--white);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.contacts .heading span {
+  color: var(--orange);
+}
+
+.contacts .img-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts .img-container .img-box {
+  margin: 1rem;
+  height: 20rem;
+}
+
+.contacts .img-container .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: var(--border);
+  border-radius: 2rem;
+}
+
+.contacts .img-container .img-box h4 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.go-top a {
+  width: 5rem;
+  height: 5rem;
+  background: var(--orange);
+  text-align: center;
+  display: block;
+  line-height: 5rem;
+  border-radius: 50%;
+  color: var(--black);
+  font-size: 2rem;
+  cursor: pointer;
+}
